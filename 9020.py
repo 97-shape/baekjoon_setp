@@ -14,7 +14,7 @@ def check_Goldbach(n, Primes):
             return print(n-i, i)
 
 t = int(sys.stdin.readline().rstrip())
-Primes = erasto()
+Primes = erasto()  # 이 항목을 check_Goldbach 함수에서 빼주어서 시간을 단축함 (= 계속해서 불러오지 않도록 함)
 for i in range(t):
     n = int(sys.stdin.readline().rstrip())
     check_Goldbach(n, Primes)
