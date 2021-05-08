@@ -1,5 +1,4 @@
 import sys
-import numpy as np
 
 def draw_star(n):
     if n == 3:
@@ -21,6 +20,7 @@ canvas = [[' ' for m in range(n)] for m in range(n)]
 
 draw_star(n)
 
-for i in canvas:  # 대괄호 없이 어떻게 출력하는가?
-    i = np.array(i).flatten().tolist()
-    print(i)
+for i in range(n):
+    for j in range(n):
+        print(canvas[i][j], end='')
+    print()
